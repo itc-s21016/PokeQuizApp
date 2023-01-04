@@ -5,55 +5,110 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import jp.ac.it_college.std.s21016.pokemonquiz.databinding.FragmentGenSelectScreenBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [genSelectScreen.newInstance] factory method to
- * create an instance of this fragment.
- */
-class genSelectScreen : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+class GenSelectScreen : Fragment() {
+    private var _binding: FragmentGenSelectScreenBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gen_select_screen, container, false)
+        _binding = FragmentGenSelectScreenBinding.inflate(inflater, container,false)
+        val element = pokemondexJson
+
+        binding.gen1.setOnClickListener {
+            val list = element.pokedex[0].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen2.setOnClickListener {
+            val list = element.pokedex[1].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen3.setOnClickListener {
+            val list = element.pokedex[2].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen4.setOnClickListener {
+            val list = element.pokedex[3].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen5.setOnClickListener {
+            val list = element.pokedex[4].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen6.setOnClickListener {
+            val list = element.pokedex[5].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen7.setOnClickListener {
+            val list = element.pokedex[6].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen8.setOnClickListener {
+            val list = element.pokedex[7].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen9.setOnClickListener {
+            val list = element.pokedex[8].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen10.setOnClickListener {
+            val list = element.pokedex[9].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen11.setOnClickListener {
+            val list = element.pokedex[10].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen12.setOnClickListener {
+            val list = element.pokedex[11].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen13.setOnClickListener {
+            val list = element.pokedex[12].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+        binding.gen14.setOnClickListener {
+            val list = element.pokedex[13].entries.map { e -> e.pokemon_id }.toIntArray()
+            Navigation.findNavController(it).navigate(
+                GenSelectScreenDirections.actionGenSelectScreenToQuizScreen(list)
+            )
+        }
+
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment genSelectScreen.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            genSelectScreen().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

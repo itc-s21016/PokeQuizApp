@@ -5,4 +5,18 @@
     <string name="start_text">START!!!</string>
     <string name="todo">TODO</string>
     <string name="title_text">ポケモンだ〜れだ！</string>
+    <string name="gen1">全国図鑑</string>
+    <string name="gen2">カントー図鑑（赤・緑・青・ピカチュウ）</string>
+    <string name="gen3">ジョウト図鑑（金・銀・クリスタル）</string>
+    <string name="gen4">ホウエン図鑑（ルビー・サファイア・エメラルド）</string>
+    <string name="gen5">シンオウ図鑑（ダイアモンド・パール・プラチナ）</string>
+    <string name="gen6">イッシュ図鑑（ブラック２・ホワイト２）</string>
+    <string name="gen7">セントラルカロス図鑑（X・Y）</string>
+    <string name="gen8">コーストカロス図鑑（X・Y）</string>
+    <string name="gen9">マウンテンカロス図鑑（X・Y）</string>
+    <string name="gen10">アローラ図鑑（ウルトラサン・ウルトラムーン）</string>
+    <string name="gen11">ガラル図鑑（ソード・シールド）</string>
+    <string name="gen12">ヨロイ島図鑑（ソード・シールド）</string>
+    <string name="gen13">カンムリ雪原図鑑（ソード・シールド）</string>
+    <string name="gen14">ヒスイ図鑑（Pokemon LEGENDS アルセウス）</string>
 </resources>
