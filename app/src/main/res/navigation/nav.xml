@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/startScreen">
+
+    <fragment
+        android:id="@+id/startScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.startScreen"
+        android:label="fragment_start_screen"
+        tools:layout="@layout/fragment_start_screen" >
+        <action
+            android:id="@+id/action_startScreen_to_genSelectScreen"
+            app:destination="@id/genSelectScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/genSelectScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.genSelectScreen"
+        android:label="fragment_gen_select_screen"
+        tools:layout="@layout/fragment_gen_select_screen" >
+        <action
+            android:id="@+id/action_genSelectScreen_to_quizScreen"
+            app:destination="@id/quizScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.quizScreen"
+        android:label="fragment_quiz_screen"
+        tools:layout="@layout/fragment_quiz_screen" >
+        <action
+            android:id="@+id/action_quizScreen_to_answerScreen"
+            app:destination="@id/answerScreen" />
+        <action
+            android:id="@+id/action_quizScreen_self"
+            app:destination="@id/quizScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.answerScreen"
+        android:label="fragment_answer_screen"
+        tools:layout="@layout/fragment_answer_screen" />
+</navigation>
