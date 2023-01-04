@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startScreen"
-        android:name="jp.ac.it_college.std.s21016.pokemonquiz.startScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.StartScreen"
         android:label="fragment_start_screen"
         tools:layout="@layout/fragment_start_screen" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/genSelectScreen"
-        android:name="jp.ac.it_college.std.s21016.pokemonquiz.genSelectScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.GenSelectScreen"
         android:label="fragment_gen_select_screen"
         tools:layout="@layout/fragment_gen_select_screen" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizScreen"
-        android:name="jp.ac.it_college.std.s21016.pokemonquiz.quizScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.Quiz"
         android:label="fragment_quiz_screen"
         tools:layout="@layout/fragment_quiz_screen" >
         <action
@@ -34,10 +34,29 @@
         <action
             android:id="@+id/action_quizScreen_self"
             app:destination="@id/quizScreen" />
+        <argument
+            android:name="pokemonid"
+            app:argType="integer[]" />
+        <argument
+            android:name="qCount"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="collecto"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/answerScreen"
-        android:name="jp.ac.it_college.std.s21016.pokemonquiz.answerScreen"
+        android:name="jp.ac.it_college.std.s21016.pokemonquiz.Answer"
         android:label="fragment_answer_screen"
-        tools:layout="@layout/fragment_answer_screen" />
+        tools:layout="@layout/fragment_answer_screen" >
+        <action
+            android:id="@+id/action_answerScreen_to_genSelectScreen"
+            app:destination="@id/genSelectScreen" />
+        <argument
+            android:name="collecto"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>
