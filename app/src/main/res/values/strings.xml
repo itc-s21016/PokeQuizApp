@@ -24,4 +24,6 @@
     <string name="empty3">%1$s</string>
     <string name="empty4">%1$s</string>
     <string name="q_count">%d問目</string>
+    <string name="result">結果発表</string>
+    <string name="gen_Select">世代選択</string>
 </resources>
