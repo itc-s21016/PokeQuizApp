@@ -19,4 +19,9 @@
     <string name="gen12">ヨロイ島図鑑（ソード・シールド）</string>
     <string name="gen13">カンムリ雪原図鑑（ソード・シールド）</string>
     <string name="gen14">ヒスイ図鑑（Pokemon LEGENDS アルセウス）</string>
+    <string name="empty">%1$s</string>
+    <string name="empty2">%1$s</string>
+    <string name="empty3">%1$s</string>
+    <string name="empty4">%1$s</string>
+    <string name="q_count">%d問目</string>
 </resources>
