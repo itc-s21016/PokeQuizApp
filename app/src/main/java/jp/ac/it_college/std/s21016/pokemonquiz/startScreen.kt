@@ -19,7 +19,7 @@ class StartScreen : Fragment() {
     ): View? {
         _binding = FragmentStartScreenBinding.inflate(inflater, container, false)
 
-        binding.Start.setOnClickListener {
+        binding.imageButton.setOnClickListener {
             Navigation.findNavController(it).navigate(
                 StartScreenDirections.actionStartScreenToGenSelectScreen()
             )
