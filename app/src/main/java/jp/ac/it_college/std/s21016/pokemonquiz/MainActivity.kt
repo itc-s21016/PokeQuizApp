@@ -2,8 +2,6 @@ package jp.ac.it_college.std.s21016.pokemonquiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import jp.ac.it_college.std.s21016.pokemonquiz.R
-
 import com.google.gson.Gson
 import jp.ac.it_college.std.s21016.pokemonquiz.Json.PokemonJson
 import jp.ac.it_college.std.s21016.pokemonquiz.Json.PokemondexJson
