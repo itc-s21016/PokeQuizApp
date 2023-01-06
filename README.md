@@ -7,5 +7,6 @@
   <img src="https://user-images.githubusercontent.com/83270156/211042579-2ebf986b-4a68-4d66-9557-c19ef939bbe7.png" width="240">
   <img src="https://user-images.githubusercontent.com/83270156/211042640-7c2ed76f-468c-492c-ba7e-b8baee72c410.png" width="240">
  </p>
+
 # Note
 せいがの作ったアプリを参考に教科書と照らし合わせ、理解しながら作りました。
